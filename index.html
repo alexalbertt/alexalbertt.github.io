@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html id="home-html" lang="en">
+    <head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Alex's Website</title>
+	    <link rel="stylesheet" href="style.css">
+	    <link rel="shortcut icon" type="image/png" href="img/head.png">
+        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="/js/my.js"></script>
+	</head>
+    <body>
+        <nav>
+            <ul>
+                <li class="active"><a href="#work">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="hero">
+                <div id="hero-text">
+                    <h1>Hi, I'm Alex,</h1>
+                    <h6 id="hero-value-prop">a <span id="CE-text">Computer Engineering</span> and <span id="Econ-text">Economics</span> student at UW.</h3>
+                    <h6 id="hero-paragraph">I have a passion for combining programming with entreprenership.
+                        asdfasdfasdfasdfasdfasdfasdfasdfasdf asdf sadf sadf sadfasdfasdf.
+                        as asdf asdfa asdf asdf sdsdfsa asdf asdf asdf.</h3>
+                </div>
+                <img id="profile-pic" src="img/dog.jpeg" alt="Hero Profile Picture"/>
+                <!-- <div class="image-cropper">
+                    <img id="profile-pic" src="img/dog.jpeg" alt="Hero Profile Picture"/>
+                </div> -->
+            </section>
+            <section id="work">
+                <div class="section-header">
+                    <div id="work-circle" class="header-circle"></div>
+                    <h2>My Work</h2>
+                </div>
+                <div id="projects">
+                    <div class="project-card">
+                        <h3 class="project-title">Title</h3>
+                        <div class="project-img-holder">
+                            <img class="project-img" src="img/project.jpg" alt=""/>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Demo <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Title</h3>
+                        <div class="project-img-holder">
+                            <img class="project-img" src="img/project.jpg" alt=""/>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Demo <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <span id="moreCards">
+                        <div class="project-card">
+                            <h3 class="project-title">Title</h3>
+                            <div class="project-img-holder">
+                                <img class="project-img" src="img/project.jpg" alt=""/>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="demo-btn">Demo <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
+                                <a href="#" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
+                                <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div id="btn-holder">
+                    <button onclick="showMore()" id="showMoreBtn">Show more</button>
+                </div>
+                <script>
+                function showMore() {
+                    var moreCards = document.getElementById("moreCards");
+                    var btnText = document.getElementById("showMoreBtn");
+                    var projectArea = document.getElementById("work");
+
+                      if (btnText.innerHTML === "Show more") {
+                        btnText.innerHTML = "Show less";
+                        moreCards.style.display = "inline";
+                        projectArea.style.height = "200rem";
+                      } else {
+                        btnText.innerHTML = "Show more";
+                        moreCards.style.display = "none";
+                        projectArea.style.height = "120rem";
+                      }
+                    }
+                </script>
+            </section>
+            <section id="about">
+                <div class="section-header">
+                    <div id="about-circle" class="header-circle"></div>
+                    <h2>About Me</h2>
+                </div>
+                <div id="about-content">
+                    <div id="about-text">
+                        <h3>Who am I?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <h3>What are you passionate about?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <h3>Anything else?</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <a href="" id="resume-link">Download Resume</a>
+                    </div>
+                    <img id="about-img" src="img/dog.jpeg" alt="Alex Albert Fun Picture" />
+                </div>
+            </section>
+            <section id="contact">
+                <div class="section-header">
+                    <div id="contact-circle" class="header-circle"></div>
+                    <h2>Contact</h2>
+                </div>
+                <div id="contact-call">
+                    <h3>Let's get in touch! Drop me a line here</h3>
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_oBXvo8.json"  background="transparent"  speed="1"  style="width: 5rem; height: 5rem; transform: rotate(-90deg);"  loop autoplay></lottie-player>
+
+                </div>
+                <div id="contact-content">
+                    <div id="contact-links">
+                        <h4><i class="fas fa-map-pin fa-1x  fa-fw"></i>Seattle, WA</h4>
+                        <h4><i class="fas fa-envelope fa-1x fa-fw"></i>alex234@uw.edu</h4>
+                        <div id="social-links">
+                            <a href="https://www.linkedin.com/in/alex-albert/" target="_blank" class="fab fa-linkedin fa-1x"></a>
+                            <a href="https://github.com/alexalbertt" target="_blank" class="fab fa-github fa-1x"></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" action="https://formspree.io/mwkrqaoe" method="POST">
+                        <input type="text" id="form-name" name="name" placeholder="Your Name">
+                        <input type="text" id="form-email" name="_replyto" placeholder="Your Email">
+                        <textarea id="form-message" name="message" placeholder="Your Message" ></textarea>
+                        <input type="submit" id="form-submit" value="Send Email">
+                        <input type="text" name="_gotcha" style="display:none;" />
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+
+
+</html>
