@@ -160,15 +160,17 @@ nav {
     height: 80rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 #hero-text {
-    width: 50rem;
+    min-width: 40rem;
+    max-width: 50rem;
     margin-bottom: 5rem;
 }
 
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 900px) {
 
     #hero {
         height: 80rem;
@@ -377,7 +379,7 @@ nav {
     border-radius: 2.5rem;
     background-color: var(--main-black);
     margin-right: 1.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--main-white);
     padding: 1rem;
     box-shadow:
@@ -427,7 +429,7 @@ nav {
     height: 5rem;
     border: .2rem solid var(--main-black);
     border-radius: 2.5rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--main-black);
     padding: 1rem;
     box-shadow:
@@ -448,10 +450,15 @@ nav {
     color: var(--main-white);
 }
 
-#moreCards {
+
+/* #moreCards {
     display: block;
-    overflow: hidden;
-}
+    height: 70rem;
+    width: 45rem;
+    border-radius: 2.5rem;
+    border: .5rem solid;
+    border-color: var(--main-black);
+} */
 
 #btn-holder {
     width: 100%;
@@ -472,13 +479,14 @@ nav {
     cursor: pointer;
     align-self: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     outline: none;
+    font-family: 'Quicksand';
 }
 
 #showMoreBtn:hover {
@@ -494,13 +502,17 @@ nav {
     #showMoreBtn {
         display: flex;
     }
+
+    .project-card:last-child {
+        display: none;
+    }
 }
 
 
 /* ABOUT SECTION */
 
 #about {
-    height: 200rem;
+    height: 170rem;
     padding-top: 10rem;
     /* padding: 10rem 25rem 0 25rem; */
 }
@@ -514,25 +526,6 @@ nav {
 
 #about-text {
     width: 40rem;
-    margin-bottom: 9rem;
-}
-
-@media only screen and (min-width: 1025px) {
-
-    #about {
-        height: 160rem;
-    }
-
-    #about-content {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    #about-text {
-        margin-right: 9rem;
-        margin-bottom: 0;
-    }
-
 }
 
 #about h2 {
@@ -546,17 +539,22 @@ nav {
 
 #about-text h3 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--main-black);
 }
 
 #about-text p {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
     color: var(--main-black);
 }
 
+#about-text p:last-child {
+    margin-bottom: 6rem;
+}
+
 #about-img {
+    display: none;
     width:30rem;
     height:30rem;
     object-fit:cover;
@@ -564,20 +562,19 @@ nav {
 }
 
 #resume-link {
-    width: 30rem;
-    height: 5rem;
+    width: 50rem;
+    height: 10rem;
     box-sizing: border-box;
-    appearance: none;
     background-color: transparent;
     border: 2px solid var(--main-black);
     border-radius: 0.6em;
     color: var(--main-black);
     cursor: pointer;
     padding: 1rem 2rem 1rem 2rem;
-    font-size: 2rem;
+    font-size: 3.5rem;
     text-decoration: none;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     outline: none;
@@ -588,11 +585,37 @@ nav {
     color: var(--main-white);
 }
 
+@media only screen and (min-width: 1025px) {
+
+    #about {
+        height: 170rem;
+    }
+
+    #about-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #about-text {
+        margin-right: 9rem;
+        margin-bottom: 0;
+    }
+
+    #about-img {
+        display: block;
+    }
+
+    #resume-link {
+        width: 30rem;
+        height: 5rem;
+    }
+}
+
 
 /* CONTACT SECTION */
 
 #contact {
-    height: 100vh;
+    height: 150rem;
     padding-top: 10rem;
     /* padding: 10rem 25rem 0 25rem; */
 }
@@ -631,21 +654,6 @@ nav {
     background-color: var(--main-black);
 }
 
-@media only screen and (min-width: 1025px) {
-
-    #contact-call {
-        margin-left: 5rem;
-    }
-    #contact-content {
-        justify-content: center;
-    }
-
-    #contact-links {
-        margin-bottom: 0;
-        margin-right: 15rem;
-    }
-}
-
 #contact h3 {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -678,7 +686,7 @@ nav {
 }
 
 #contact-form {
-    max-height: 40rem;
+    max-height: 80rem;
     width: 40rem;
     display: flex;
     flex-direction: column;
@@ -688,39 +696,48 @@ nav {
 input[type='text'] {
     width: 40rem;
     border: none;
-    border-bottom: .2rem solid grey;
+    border-radius: 0.6em;
+    background-color: Gainsboro;
     outline: none;
     height: 2rem;
-    padding: 2rem 0 2rem 0;
+    padding: 4rem 0 4rem 2rem;
     font-size: 2rem;
     margin-bottom: 3rem;
+    display: flex;
+    font-family: 'Quicksand';
+    font-weight: normal;
 }
 
 input[type='text']:focus {
-    border-color: var(--main-black);
+    background-color: var(--main-white);
+    border: 2px solid var(--main-black);
 }
 
 textarea {
     width: 40rem;
-    min-height: 10rem;
+    min-height: 20rem;
     resize: vertical;
     border: none;
-    border-bottom: .2rem solid grey;
+    border-radius: 0.6em;
+    background-color: Gainsboro;
     outline: none;
     height: 2rem;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 0 2rem;
     font-size: 2rem;
     margin-bottom: 3rem;
+    font-family: 'Quicksand';
+    font-weight: normal;
 }
 
 textarea:focus {
-    border-color: var(--main-black);
+    background-color: var(--main-white);
+    border: 2px solid var(--main-black);
 }
 
 input[type='submit'] {
     margin-top: 3rem;
     width: 40rem;
-    height: 5rem;
+    height: 10rem;
     appearance: none;
     background-color: transparent;
     border: 2px solid var(--main-black);
@@ -729,16 +746,43 @@ input[type='submit'] {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-decoration: none;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 700;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     outline: none;
+    font-family: 'Quicksand';
 }
 
 input[type='submit']:hover {
     box-shadow: 0 0 40px 40px var(--main-black) inset;
     color: var(--main-white);
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+    #contact {
+        height: 100rem;
+    }
+
+    #contact-call {
+        margin-left: 5rem;
+    }
+    #contact-content {
+        justify-content: center;
+    }
+
+    #contact-links {
+        margin-bottom: 0;
+        margin-right: 15rem;
+    }
+
+    input[type='submit'] {
+        height: 5rem;
+        font-size: 2rem;
+    }
+
 }

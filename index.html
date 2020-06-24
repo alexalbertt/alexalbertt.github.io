@@ -63,38 +63,39 @@
                             <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                    <span id="moreCards">
-                        <div class="project-card">
-                            <h3 class="project-title">Title</h3>
-                            <div class="project-img-holder">
-                                <img class="project-img" src="img/project.jpg" alt=""/>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="demo-btn">Demo <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
-                                <a href="#" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
-                                <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
-                            </div>
+                    <div class="project-card">
+                        <h3 class="project-title">Title</h3>
+                        <div class="project-img-holder">
+                            <img class="project-img" src="img/project.jpg" alt=""/>
                         </div>
-                    </span>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Demo <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
+                            <a href="#" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
                 </div>
                 <div id="btn-holder">
                     <button onclick="showMore()" id="showMoreBtn">Show more</button>
                 </div>
                 <script>
                 function showMore() {
-                    var moreCards = document.getElementById("moreCards");
+                    // var moreCards = document.getElementById("moreCards");
+                    var c = document.getElementsByClassName("project-card");
+                    var moreCards = c[c.length - 1];
                     var btnText = document.getElementById("showMoreBtn");
                     var projectArea = document.getElementById("work");
-
-                      if (btnText.innerHTML === "Show more") {
-                        btnText.innerHTML = "Show less";
-                        moreCards.style.display = "inline";
-                        projectArea.style.height = "200rem";
-                      } else {
-                        btnText.innerHTML = "Show more";
-                        moreCards.style.display = "none";
-                        projectArea.style.height = "120rem";
-                      }
+                    if (btnText.display != "none"){
+                        if (btnText.innerHTML === "Show more") {
+                          btnText.innerHTML = "Show less";
+                          moreCards.style.display = "inline";
+                          projectArea.style.height = "200rem";
+                        } else {
+                          btnText.innerHTML = "Show more";
+                          moreCards.style.display = "none";
+                          projectArea.style.height = "120rem";
+                        }
+                    }
                     }
                 </script>
             </section>
@@ -109,7 +110,7 @@
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                        <h3>What are you passionate about?</h3>
+                        <h3>What am I passionate about?</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
