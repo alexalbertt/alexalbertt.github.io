@@ -279,17 +279,11 @@ nav {
 }
 
 .project-card {
-    /* display: none !important; */
     position: relative;
     background-color: var(--main-white);
     height: 70rem;
     width: 45rem;
     border-radius: 2.5rem;
-    /* box-shadow: 0 1rem 2rem rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2); */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
-    /* align-items: center; */
     margin-bottom: 4rem;
     border: .5rem solid;
     border-color: var(--main-black);
@@ -307,6 +301,10 @@ nav {
     z-index: 1;
 }
 
+#construction-ani {
+    height: 100%;
+}
+
 .project-img-holder {
     position: absolute;
     top: 0;
@@ -322,6 +320,8 @@ nav {
 .project-img {
     height: 90%;
     margin-top: 3rem;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 .project-img:hover {
@@ -463,6 +463,10 @@ nav {
 }
 
 @media only screen and (min-width: 1025px) {
+
+    .project-img {
+        animation-duration: 0s;
+    }
 
     #showMoreBtn {
         display: flex;
