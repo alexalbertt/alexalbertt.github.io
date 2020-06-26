@@ -324,11 +324,6 @@ nav {
     animation-iteration-count: infinite;
 }
 
-.project-img:hover {
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
 .bounce {
         animation-name: bounce;
         animation-timing-function: linear;
@@ -466,6 +461,11 @@ nav {
 
     .project-img {
         animation-duration: 0s;
+    }
+
+    .project-img:hover {
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
     }
 
     #showMoreBtn {
