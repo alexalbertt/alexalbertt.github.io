@@ -41,7 +41,7 @@ section {
 @media only screen and (min-width: 1025px) {
 
     main {
-        margin-top: 8rem;
+        margin-top: 0rem;
     }
 
     section {
@@ -432,7 +432,7 @@ nav {
 }
 
 #showMoreBtn {
-    display: none;
+    display: flex;
     width: 50rem;
     height: 5rem;
     appearance: none;
@@ -441,11 +441,11 @@ nav {
     border-radius: 0.6em;
     color: var(--main-black);
     cursor: pointer;
-    align-self: center;
+    align-items: center;
     justify-content: center;
     font-size: 2rem;
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
     font-weight: 700;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     outline: none;
