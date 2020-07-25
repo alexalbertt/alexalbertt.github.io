@@ -432,7 +432,7 @@ nav {
 }
 
 #showMoreBtn {
-    display: flex;
+    display: none;
     width: 50rem;
     height: 5rem;
     appearance: none;
@@ -481,7 +481,8 @@ nav {
 /* ABOUT SECTION */
 
 #about {
-    height: 170rem;
+    height: auto;
+    /* height: 170rem; */
     padding-top: 10rem;
     /* padding: 10rem 25rem 0 25rem; */
 }
@@ -514,7 +515,7 @@ nav {
 }
 
 #about-text p {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 6rem;
     color: var(--main-black);
 }
@@ -559,7 +560,8 @@ nav {
 @media only screen and (min-width: 1025px) {
 
     #about {
-        height: 170rem;
+        height: auto;
+        /* height: 170rem; */
     }
 
     #about-content {
@@ -570,6 +572,7 @@ nav {
     #about-text {
         margin-right: 9rem;
         margin-bottom: 0;
+        font-size: 2rem;
     }
 
     #about-img {
@@ -586,8 +589,10 @@ nav {
 /* CONTACT SECTION */
 
 #contact {
-    height: 150rem;
+    height: auto;
+    /* height: 150rem; */
     padding-top: 10rem;
+    padding-bottom: 10rem;
     /* padding: 10rem 25rem 0 25rem; */
 }
 
