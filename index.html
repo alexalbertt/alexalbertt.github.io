@@ -1,160 +1,62 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Alex Albert</title>
 
-<html id="home-html" lang="en">
-    <head>
-    	<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    	<title>Alex's Website</title>
-	    <link rel="stylesheet" href="style.css">
-	    <link rel="shortcut icon" type="image/jpg" href="img/profilePic.jpg">
-        <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="/js/my.js"></script>
-	</head>
-    <body>
-        <nav>
-            <ul>
-                <li class="active"><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section id="hero">
-                <div id="hero-text">
-                    <h1>Hi, I'm Alex,</h1>
-                    <h6 id="hero-value-prop">a <span id="CE-text">Computer Science</span> student at UW.</h3>
-                    <!-- <h6 id="hero-paragraph">I have a passion for combining programming with entreprenership.
-                        asdfasdfasdfasdfasdfasdfasdfasdfasdf asdf sadf sadf sadfasdfasdf.
-                        as asdf asdfa asdf asdf sdsdfsa asdf asdf asdf.</h3> -->
-                </div>
-                <img id="profile-pic" src="img/profilePic.jpg" alt="Hero Profile Picture"/>
-                <!-- <div class="image-cropper">
-                    <img id="profile-pic" src="img/dog.jpeg" alt="Hero Profile Picture"/>
-                </div> -->
-            </section>
-            <section id="work">
-                <div class="section-header">
-                    <div id="work-circle" class="header-circle"></div>
-                    <h2>My Work</h2>
-                </div>
-                <div id="projects">
-                    <div class="project-card">
-                        <h3 class="project-title">Coming Soon...</h3>
-                        <div class="project-img-holder">
-                            <lottie-player id="construction-ani" src="https://assets1.lottiefiles.com/packages/lf20_hntzYU.json"  background="transparent"  speed="1"  style="height: 100%;"  loop autoplay></lottie-player>
-                            <!-- <img class="project-img" src="img/project.jpg" alt=""/> -->
-                        </div>
-                        <div class="project-links">
-                            <a href="under-construction.html" target="_blank" class="demo-btn">Site <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
-                            <a href="under-construction.html" target="_blank" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
-                            <a href="under-construction.html" target="_blank" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-title">Heyyy</h3> 
-                        <div class="project-img-holder">
-                            <img id="heyyy-img" class="project-img bounce" src="img/heyyyMock.png" alt=""/>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://apps.apple.com/us/app/heyyy-make-friends-in-school/id1369679488?l=is" target="_blank" class="demo-btn">App <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
-                            <a href="https://github.com/alexalbertt/heyyy" target="_blank" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
-                            <a href="under-construction.html" target="_blank" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3 class="project-title">Night Owl</h3>
-                        <div class="project-img-holder">
-                            <img class="project-img bounce" src="img/nightOwlMock.jpeg" alt=""/>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://apps.apple.com/us/app/night-owl-chat-after-hours/id1410614570?l=is" class="demo-btn">App <i class="fas fa-external-link-alt fa-1x" aria-hidden="true"></i></a>
-                            <a href="https://github.com/alexalbertt/Night-Owl" target="_blank" class="code-btn">Code <i class="fab fa-github fa-1x" aria-hidden="true"></i></a>
-                            <a href="under-construction.html" target="_blank" class="case-btn">Case Study <i class="fas fa-file-alt fa-1x" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div id="btn-holder">
-                    <button onclick="showMore()" id="showMoreBtn">Show more</button>
-                </div>
-                <script>
-                function showMore() {
-                    var c = document.getElementsByClassName("project-card");
-                    var moreCards = c[c.length - 1];
-                    var btnText = document.getElementById("showMoreBtn");
-                    var projectArea = document.getElementById("work");
-                    if (btnText.display != "none"){
-                        if (btnText.innerHTML === "Show more") {
-                          btnText.innerHTML = "Show less";
-                          moreCards.style.display = "inline";
-                          projectArea.style.height = "200rem";
-                        } else {
-                          btnText.innerHTML = "Show more";
-                          moreCards.style.display = "none";
-                          projectArea.style.height = "120rem";
-                        }
-                    }
-                    }
-                </script>
-            </section>
-            <section id="about">
-                <div class="section-header">
-                    <div id="about-circle" class="header-circle"></div>
-                    <h2>About Me</h2>
-                </div>
-                <div id="about-content">
-                    <div id="about-text">
-                        <h3>Who am I?</h3>
-                        <p>
-                            My name is Alex Albert and I am a sophomore currently studying Computer Science at the University of Washington in Seattle.
-                        </p>
-                        <h3>What am I currently doing?</h3>
-                        <p>
-                            At the moment, I am working at Capital One as a software engineering intern. Outside of that, I am working as the VP of professional development for the Lavin Entrepreneurship program.
-                        </p>
-                        <h3>What am I passionate about?</h3>
-                        <p>
-                            I love to make stuff. Whether it is building robotic rovers or sleek iOS apps, I yearn for the challenge of creating solutions to problems with technology. I also have a love for business -- you can often catch me perusing the (web) pages of the WSJ or catching up with one of the way too many business newsletters I am subscribed to.<br /><br />
-                            In my free time, I love to lift weights and play sports.  Recently, I have been getting into meditation and philosophy, specifically stoicism. If you’re into that, let me know! I would love to chat about my boy Marcus Aurelius sometime.
-                        </p>
-                        <a href="https://docs.google.com/document/d/1lP8j60_GRirk5aH6nzSGmatRq07in8FnMMFvkMCnqwc/edit?usp=sharing" target="_blank" id="resume-link">Download Resume</a>
-                    </div>
-                    <video id="about-img" src="img/dunkVid.mp4" autoplay loop muted></video>
-                    <!-- <img id="about-img" src="img/dunkImg.png" alt="Alex Albert Fun Picture" /> -->
-                </div>
-            </section>
-            <section id="contact">
-                <div class="section-header">
-                    <div id="contact-circle" class="header-circle"></div>
-                    <h2>Contact</h2>
-                </div>
-                <div id="contact-call">
-                    <h3>Let's get in touch! Drop me a line here</h3>
-                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_oBXvo8.json"  background="transparent"  speed="1"  style="width: 5rem; height: 5rem; transform: rotate(-90deg);"  loop autoplay></lottie-player>
+    <meta name="author" content="Alex Albert">
+    <meta name="description" content="Personal website for Alex Albert.">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-                </div>
-                <div id="contact-content">
-                    <div id="contact-links">
-                        <h4><i class="fas fa-map-pin fa-1x  fa-fw"></i>Seattle, WA</h4>
-                        <div id="social-links">
-                            <a href="https://www.linkedin.com/in/alex-albert/" target="_blank" class="fab fa-linkedin fa-1x"></a>
-                            <a href="https://github.com/alexalbertt" target="_blank" class="fab fa-github fa-1x"></a>
-                        </div>
-                    </div>
-                    <form id="contact-form" action="https://formspree.io/mwkrqaoe" method="POST">
-                        <input type="text" id="form-name" name="name" placeholder="Your Name">
-                        <input type="text" id="form-email" name="_replyto" placeholder="Your Email">
-                        <textarea id="form-message" name="message" placeholder="Your Message" ></textarea>
-                        <input type="submit" id="form-submit" value="Send Email">
-                        <input type="text" name="_gotcha" style="display:none;" />
-                    </form>
-                </div>
-            </section>
-        </main>
-    </body>
-
-
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,200' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="content">
+        <div id="image-container">
+            <img id="profile-pic" src="img/mewithdog.jpg" alt="Hero Profile Picture"/>
+        
+        </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/alex-albert" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/alexalbertt" target="_blank"><i class="fa fa-github-alt"></i></a>
+            <a href="mailto:alexcalbert4@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i></a>
+        </div>
+        <div id="text">
+                <p style="font-size: 18px">Hi, my name is <b style="font-size: 18px">Alex Albert</b>.</p>
+                <p>
+                <br>
+                I'm currently based out of Seattle studying Computer Science at the <a href="https://www.cs.washington.edu/" class="text-link">University of Washington</a>. I get excited to work on problems that impact the world beyond the computer screen.
+                <br><br>
+                I like bullet points so here's a few quick ones about me:</p>
+                <br>
+                <b>Present</b>
+                <ul>
+                    <li>
+                        <p>Living in sunny Mountain View, CA working within the Oar Lib team in YouTube Ads at <a href="https://www.google.com" class="text-link">Google</a>.</p>
+                    </li>
+                </ul>
+                <b>Past</b>
+                <ul>
+                    <li>
+                        <p>Completed a software engineering internship at <a href="https://www.capitalone.com" class="text-link">Capital One</a> within the credit card correspondence team</p>
+                    </li>
+                    <li>
+                        <p>Created a career development and internship program within the <a href="https://foster.uw.edu/centers/buerk-ctr-entrepreneurship/undergraduate-entrepreneurship/lavin-entrepreneurship-program/" class="text-link">Lavin Entrepreneurship program</a> at UW serving as VP of Professional Development</p>
+                    </li>
+                    <li>
+                        <p>Was invited to participate in <a href="https://buildyourfuture.withgoogle.com/programs/softwareproductsprint" class="text-link">Google's Software Product Sprint</a> where I developed a COVID vaccine rewards web application</p>
+                    </li>
+                    <li>
+                        <p>Co-founded and led the WA Voting Project to increase information about local election officials in Washington state's 2020 elections</p>
+                    </li>
+                    <li>
+                        <p>Worked as a Software Developer in the <a href="https://www.uwseal.org/" class="text-link">UW Systems, Energy, and Automation Lab (SEAL)</a> where I developed a Microsoft Word Add-In application that assists researchers with the research paper writing process</p>
+                    </li>
+                </ul>
+        </div>
+	</div>
+</body>
 </html>
